@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Fabrirama</title>
-  <script type="module" crossorigin src="./assets/index-eb2lVhL5.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dux1Z-7I.css">
+  <script type="module" crossorigin src="./assets/index-CKPpU10W.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DNUt06aG.css">
 </head>
 <body>
   <div id="consoleOutput" style="
@@ -46,8 +46,42 @@
     <p>Use touch controls to interact with the on-screen buttons</p>
   </span>
   <div id="hud">
+    <span id="tutorial">
+      <span id="guide01">
+        <p>
+          <strong>Move:</strong> Use the <kbd>WASD</kbd> or <kbd>Arrow</kbd> keys to move the player.
+        </p>
+        <p>
+          <strong>Mobile:</strong> Use the virtual joystick located in the bottom-left corner to move the player in any direction.
+        </p>
+      </span>
+      <span id="guide02">
+        <p><strong>Camera Movement:</strong> Click the screen to lock the cursor (press <kbd>Esc</kbd> to unlock), then move your mouse to look around.</p>
+        <p><strong>Mobile:</strong> Drag your finger on the screen to look around.</p>
+      </span>
+      <span id="guide03">
+        <p><strong>Jump:</strong> Press the <kbd>Spacebar</kbd> to jump while moving.</p>
+        <p><strong>Mobile:</strong> Tap or hold the arrow button on the right side of the screen to jump.</p>
+      </span>
+      <span id="guide04">
+        <p>After picking up the shovel, move the camera close to the dirt block until a black outline appears, then hold the left mouse button to break it.</p>
+        <p><strong>Mobile:</strong> Approach the dirt block until a black outline appears, then hold the cross button on the right side of the screen.</p>
+      </span>
+      <span id="guide05">
+        <p>You can’t jump two blocks high. Select the dirt block with the scroll wheel or 2 key, move the camera close until a black outline appears (without touching the player), then right-click to place it.</p>
+        <p><strong>Mobile:</strong> Tap the dirt block in the toolbar, move the camera close, and tap the cross icon to place the block.</p>
+      </span>
+      <span id="guide06">
+        <p>If you fall onto red blocks, you’ll lose all the items in your toolbar.</p>
+      </span>
+      <span id="guide07">
+        <p>You’ve collected a pickaxe! It can only break stone. Mine stone and use it to build your way up this two-block-high area.</p>
+      </span>
+      <span id="guide08">
+        <p>To complete the level, enter the blue portal.</p>
+      </span>
+    </span>
     <span id="pauseMenu">
-      <span id="howToPlayButton">How To Play</span>
       <span id="levelSelectionButton"></span>
       <span id="sensitivityMenu">
         <label for="sensitivity">Camera Sensitivity: </label>
@@ -95,6 +129,7 @@
       Level Selection
     </div>
     <div id="levels">
+      <div class="levelButton">0</div>
       <div class="levelButton">1</div>
       <div class="levelButton">2</div>
       <div class="levelButton">3</div>

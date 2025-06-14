@@ -521,3 +521,26 @@ input[type=range]::-moz-range-thumb {
   height: auto;
 }
 
+#tutorial {
+  position: absolute;
+  display: block;
+  font-size: clamp(14px, 2vw, 24px);
+  height: calc(100% - (100vh - 45vh));
+  width: 100%;
+  align-items: end;
+  justify-content: center;
+  color: white;
+  font-family: monospace;
+  text-shadow: 1px 1px black;
+  bottom: 0;
+}
+
+#tutorial p {
+  margin: 2% 20%;
+  text-align: center;
+}
+
+#guide01, #guide02, #guide03, #guide04, #guide05, #guide06, #guide07, #guide08 {
+  display: none;
+}
+
